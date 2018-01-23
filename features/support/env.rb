@@ -7,7 +7,7 @@ include Test::Unit::Assertions
 require_all 'lib'
 
 Before do |scenario|
-    @browser = Browser.new(ENV['DRIVER'])
+    @browser = Browser.new()
     @browser.set_timeout(10)
     @browser.delete_cookies
 end

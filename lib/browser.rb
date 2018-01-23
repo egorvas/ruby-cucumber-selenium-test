@@ -1,8 +1,8 @@
 class Browser
   attr_reader :driver
 
-  def initialize(browser_name)
-    @driver = start_browser(browser_name)
+  def initialize()
+    @driver = start_browser
     delete_cookies
   end
 
@@ -19,15 +19,8 @@ class Browser
     @driver.manage.timeouts.implicit_wait = timeout
   end
 
-  def start_browser(browser)
-    case browser
-    when 'firefox'
-      driver = Selenium::WebDriver.for :firefox
-    when 'chrome'
+  def start_browser
       driver = Selenium::WebDriver.for :chrome
-    else
-      driver = Selenium::WebDriver.for :chrome
-    end
     driver
   end
 end
