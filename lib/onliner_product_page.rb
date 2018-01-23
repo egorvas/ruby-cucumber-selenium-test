@@ -27,7 +27,7 @@ class OnlinerProductPage
   end
 
   def open_cart_page
-    @driver.find_element(:class, "product-aside__item-button").click
+    @driver.find_element(:class, "product-aside__item-button_checked").click
     OnlinerCartPage.new(@driver)
   end
 
