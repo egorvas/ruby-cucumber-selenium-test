@@ -1,7 +1,7 @@
 ## How to run:
 
-- Install chrome browser
-- brew install chromedriver
-- gem install bundle
-- bundle install
-- cucumber
+1. Install chrome browser
+2. brew install chromedriver
+3. gem install bundle
+4. bundle install
+5. cucumber
